@@ -1,1 +1,31 @@
-/*# sourceMappingURL=index.css.map */
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --salmon: #f58c72;
+  --salonPasado: #F26A6C;
+  --turron: #E6A377;
+}
+
+.menu {
+  background-color: var(--turron);
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  gap: 1rem;
+}
+.menu a {
+  color: var(--white);
+  text-decoration: none;
+}
+.menu a:hover {
+  color: var(--salonPasado);
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=index.css.map */
