@@ -19,7 +19,8 @@
 }
 .menu a:hover {
   color: var(--salonPasado);
-  text-decoration: underline;
+  display: flex;
+  justify-content: space-between;
 }
 
 * {
