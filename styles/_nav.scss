@@ -1,0 +1,16 @@
+
+.menu {
+  background-color: var(--turron);
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  gap: 1rem;
+  a {
+    color: var(--white);
+    text-decoration: none;
+    &:hover{
+        color: var(--salonPasado);
+        text-decoration: underline;
+    }
+  }
+}
