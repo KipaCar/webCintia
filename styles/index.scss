@@ -11,3 +11,14 @@
     margin: 0;
     padding: 0;
 }
+
+.top{
+    aspect-ratio: 1;
+    background: red;
+    border-radius: 50%;
+    display: none;
+    inset-block-end: 0;
+    padding: 1rem;
+    position: fixed;
+    inset-inline-end: 0;
+}
