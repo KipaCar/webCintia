@@ -1,0 +1,21 @@
+{
+  "name": "webcintia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "sass": "sass ./styles/index.scss ./css/index.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KipaCar/webCintia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KipaCar/webCintia/issues"
+  },
+  "homepage": "https://github.com/KipaCar/webCintia#readme",
+  "description": ""
+}

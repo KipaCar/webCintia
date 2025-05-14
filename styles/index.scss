@@ -1,6 +1,8 @@
 
-@use "_variables.scss";
-@use "_nav.scss";
+@use './utils' as *;
+@use './variables' as *;
+@use './nav' as *;
+
 
 *{
     box-sizing: border-box;
