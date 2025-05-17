@@ -1,12 +1,16 @@
-//Top bar
+const btnTop = document.querySelector(".top");
 
-window.addEventListener("scroll", function () {
-  const prueba = document.getElementsByClassName("prueba");
+// Mostrar u ocultar el botón al hacer scroll
+window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
-    console.log(prueba);
-    console.log("Scrolled more than 50px");
-    document.getElementsByClassName("top")[0].style.display = "block";
+    btnTop.style.display = "block";
   } else {
-    document.getElementsByClassName("top")[0].style.display = "none";
+    btnTop.style.display = "none";
   }
+});
+btnTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
