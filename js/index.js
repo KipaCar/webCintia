@@ -14,3 +14,24 @@ btnTop.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+   const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        // Puedes descomentar esto si quieres que se anime solo una vez:
+        // observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1  // Empieza la animación cuando se ve el 10% de la sección
+  });
+
+  document.querySelectorAll('.pantalla-completa').forEach(section => {
+    observer.observe(section);
+  });
