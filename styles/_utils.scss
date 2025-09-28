@@ -2,21 +2,22 @@
 @use 'sass:string';
 
 @function rel($size, $base: false) {
- $base-font-size: 16 !default;
+	$base-font-size: 16 !default;
 
- @if(string.index('' + $size, 'px')) {
-  @return div(
-   to-number(replace('' + $size, math.unit(12px), '')),
-   if(is('number', $base), $base, $base-font-size)
-  ) * if($base, 1em, 1rem);
- }
+	@if (string.index('' + $size, 'px')) {
+		@return div(
+				to-number(replace('' + $size, math.unit(12px), '')),
+				if(is('number', $base), $base, $base-font-size)
+			) *
+			if($base, 1em, 1rem);
+	}
 
- @if(string.index('' + $size, 'var(')) {
-  @return if($base,
-   calc(#{$size} * #{div(1rem, if($base == true, $base-font-size, $base))})
-   #{$size}); // with or without calc(...) depending of base
- }
+	@if (string.index('' + $size, 'var(')) {
+		@return if(
+			$base,
+			calc(#{$size} * #{div(1rem, if($base == true, $base-font-size, $base))}) #{$size}
+		); // with or without calc(...) depending of base
+	}
 
- @return $size;
+	@return $size;
 }
-

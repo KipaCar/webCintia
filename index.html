@@ -1,275 +1,313 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link type="text/css" rel="stylesheet" href="css/index.css" />
+		<script src="js/index.js" defer></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+		/>
+		<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link type="text/css" rel="stylesheet" href="css/index.css">
-    <script src="js/index.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-</head>
+	<body>
+		<!-- 🌐 CABECERA -->
+		<header>
+			<nav>
+				<div>
+					<a href="/index.html">
+						<img src="src/icons/logo.jpg" alt="Logo" />
+					</a>
+				</div>
+				<button class="hamburger" id="hamburger" aria-label="Menú">☰</button>
+				<ul class="menu" id="nav-menu">
+					<li><a href="#home">Inicio</a></li>
+					<li><a href="#about">Sobre mi</a></li>
+					<li><a href="#services">Servicios</a></li>
+					<li><a href="#contact">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<!-- INICIO -->
+			<section class="hero-inicio pantalla-completa hidden">
+				<div class="overlay">
+					<div
+						class="texto-header"
+						data-aos="fade-top"
+						data-aos-easing="linear"
+						data-aos-duration="1500"
+					>
+						<h1>Psicoterapeuta</h1>
+						<h1>y</h1>
+						<h1>Neuropsicóloga Clínica</h1>
+						<p>Un espacio seguro para sanar, crecer y reconectar contigo</p>
+						<p>
+							Acompañamiento terapéutico desde la empatía, la presencia y el respeto por tu
+							historia.
+						</p>
+						<a href="#contacto" class="btn-hero">💬 Agendar Sesión</a>
+					</div>
+				</div>
+			</section>
+			<!-- About -->
+			<section id="about" class="pantalla-completa hidden quien-soy-scroll">
+				<div class="decorativa">
+					<svg
+						data-name="Layer 1"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 1200 120"
+						preserveAspectRatio="none"
+					>
+						<path
+							d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+							opacity=".25"
+							class="shape-fill"
+						></path>
+						<path
+							d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+							opacity=".5"
+							class="shape-fill"
+						></path>
+						<path
+							d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+							class="shape-fill"
+						></path>
+					</svg>
+				</div>
+				<div class="contenedor">
+					<div class="foto">
+						<img src="src/icons/retrato.jpeg" alt="Psicóloga" />
+					</div>
+					<div class="contenido">
+						<h2>¿Quién Soy?</h2>
+						<p class="frase">
+							"Acompaño procesos de sanación y transformación desde la empatía, el respeto y la
+							presencia."
+						</p>
 
-<body>
-    <!-- 🌐 CABECERA -->
-    <header>
-        <nav>
-            <div>
-                <a href="/index.html">
-                    <img src="src/icons/logo.jpg" alt="Logo">
-                </a>
-            </div>
-            <button class="hamburger" id="hamburger" aria-label="Menú">
-                ☰
-            </button>
-            <ul class="menu" id="nav-menu">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre mi</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- INICIO -->
-        <section class="hero-inicio pantalla-completa hidden">
-            <div class="overlay">
-                <div class="texto-header" data-aos="fade-top" data-aos-easing="linear" data-aos-duration="1500">
-                    <h1>Psicoterapeuta</h1>
-                    <h1>y</h1>
-                    <h1>Neuropsicóloga Clínica</h1>
-                    <p>Un espacio seguro para sanar, crecer y reconectar contigo</p>
-                    <p>Acompañamiento terapéutico desde la empatía, la presencia y el respeto por tu historia.</p>
-                    <a href="#contacto" class="btn-hero">💬 Agendar Sesión</a>
-                </div>
-            </div>
-        </section>
-        <!-- About -->
-        <section id="about" class="pantalla-completa hidden quien-soy-scroll">
-            <div class="decorativa">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-                        opacity=".25" class="shape-fill"></path>
-                    <path
-                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-                        opacity=".5" class="shape-fill"></path>
-                    <path
-                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-                        class="shape-fill"></path>
-                </svg>
-            </div>
-            <div class="contenedor">
-                <div class="foto">
-                    <img src="src/icons/retrato.jpeg" alt="Psicóloga" />
-                </div>
-                <div class="contenido">
-                    <h2>¿Quién Soy?</h2>
-                    <p class="frase">"Acompaño procesos de sanación y transformación desde la empatía, el respeto y
-                        la
-                        presencia."</p>
+						<div class="columnas">
+							<div class="columna" data-aos="fade-up-right">
+								<p>
+									Mi nombre es <strong>Tu Nombre</strong>, soy psicóloga con una profunda vocación
+									de servicio y escucha. Desde hace más de [X años], acompaño a personas que buscan
+									comprenderse, sanar y reconectarse con su esencia.
+								</p>
+								<p>
+									Me formé en [Nombre de Universidad] y me especialicé en [tu especialización]. A lo
+									largo de mi trayectoria, he integrado diversas herramientas terapéuticas que
+									permiten trabajar desde una visión holística y compasiva del ser humano.
+								</p>
+							</div>
+							<div class="columna" data-aos="fade-up-left">
+								<p>
+									Trabajo desde un enfoque integrativo con bases en la psicología humanista, la
+									terapia centrada en la persona, el mindfulness y la psicoterapia corporal. Creo en
+									la terapia como un encuentro auténtico entre dos personas, donde puede surgir algo
+									nuevo, reparador y vital.
+								</p>
+								<p>
+									Además de la clínica individual, me apasiona la formación continua, la escritura
+									terapéutica y la creación de espacios donde florezca la autenticidad y el
+									autocuidado.
+								</p>
+							</div>
+							<div class="columna" data-aos="fade-up-right">
+								<p>
+									Trabajo desde un enfoque integrativo con bases en la psicología humanista, la
+									terapia centrada en la persona, el mindfulness y la psicoterapia corporal. Creo en
+									la terapia como un encuentro auténtico entre dos personas, donde puede surgir algo
+									nuevo, reparador y vital.
+								</p>
+								<p>
+									Además de la clínica individual, me apasiona la formación continua, la escritura
+									terapéutica y la creación de espacios donde florezca la autenticidad y el
+									autocuidado.
+								</p>
+							</div>
+							<div class="columna" data-aos="fade-up-left">
+								<p>
+									Trabajo desde un enfoque integrativo con bases en la psicología humanista, la
+									terapia centrada en la persona, el mindfulness y la psicoterapia corporal. Creo en
+									la terapia como un encuentro auténtico entre dos personas, donde puede surgir algo
+									nuevo, reparador y vital.
+								</p>
+								<p>
+									Además de la clínica individual, me apasiona la formación continua, la escritura
+									terapéutica y la creación de espacios donde florezca la autenticidad y el
+									autocuidado.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Separador -->
+			<div class="features-separator" data-aos="fade-right" ata-aos-duration="3000">
+				<div class="features-container">
+					<div class="feature-item">
+						<div class="feature-icon">
+							<img src="src/icons/emocion.png" alt="Cerebro" />
+						</div>
+						<p>Neurociencia</p>
+					</div>
 
-                    <div class="columnas">
-                        <div class="columna" data-aos="fade-up-right">
-                            <p>Mi nombre es <strong>Tu Nombre</strong>, soy psicóloga con una profunda vocación de
-                                servicio y escucha. Desde hace más de [X años], acompaño a personas que buscan
-                                comprenderse, sanar y reconectarse con su esencia.</p>
-                            <p>Me formé en [Nombre de Universidad] y me especialicé en [tu especialización]. A lo
-                                largo
-                                de mi trayectoria, he integrado diversas herramientas terapéuticas que permiten
-                                trabajar
-                                desde una visión holística y compasiva del ser humano.</p>
-                        </div>
-                        <div class="columna" data-aos="fade-up-left">
-                            <p>Trabajo desde un enfoque integrativo con bases en la psicología humanista, la terapia
-                                centrada en la persona, el mindfulness y la psicoterapia corporal. Creo en la
-                                terapia
-                                como un encuentro auténtico entre dos personas, donde puede surgir algo nuevo,
-                                reparador
-                                y vital.</p>
-                            <p>Además de la clínica individual, me apasiona la formación continua, la escritura
-                                terapéutica y la creación de espacios donde florezca la autenticidad y el
-                                autocuidado.
-                            </p>
-                        </div>
-                        <div class="columna" data-aos="fade-up-right">
-                            <p>Trabajo desde un enfoque integrativo con bases en la psicología humanista, la terapia
-                                centrada en la persona, el mindfulness y la psicoterapia corporal. Creo en la
-                                terapia
-                                como un encuentro auténtico entre dos personas, donde puede surgir algo nuevo,
-                                reparador
-                                y vital.</p>
-                            <p>Además de la clínica individual, me apasiona la formación continua, la escritura
-                                terapéutica y la creación de espacios donde florezca la autenticidad y el
-                                autocuidado.
-                            </p>
-                        </div>
-                        <div class="columna" data-aos="fade-up-left">
-                            <p>Trabajo desde un enfoque integrativo con bases en la psicología humanista, la terapia
-                                centrada en la persona, el mindfulness y la psicoterapia corporal. Creo en la
-                                terapia
-                                como un encuentro auténtico entre dos personas, donde puede surgir algo nuevo,
-                                reparador
-                                y vital.</p>
-                            <p>Además de la clínica individual, me apasiona la formación continua, la escritura
-                                terapéutica y la creación de espacios donde florezca la autenticidad y el
-                                autocuidado.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Separador -->
-        <div class="features-separator" data-aos="fade-right" ata-aos-duration="3000">
-            <div class="features-container">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <img src="src/icons/emocion.png" alt="Cerebro">
-                    </div>
-                    <p>Neurociencia</p>
-                </div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<img src="src/icons/planta.png" alt="Icono corazón" />
+						</div>
+						<p>Empatía</p>
+					</div>
 
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <img src="src/icons/planta.png" alt="Icono corazón">
-                    </div>
-                    <p>Empatía</p>
-                </div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<img src="src/icons/escucha-activa.png" alt="Icono diálogo" />
+						</div>
+						<p>Escucha Activa</p>
+					</div>
 
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <img src="src/icons/escucha-activa.png" alt="Icono diálogo">
-                    </div>
-                    <p>Escucha Activa</p>
-                </div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<img src="src/icons/confianza.png" alt="Icono confianza" />
+						</div>
+						<p>Confianza</p>
+					</div>
+				</div>
+			</div>
+			<!-- Servicios -->
+			<section id="services" class="servicios-stack pantalla-completa hidden">
+				<div class="titulo-fijo">
+					<h2>🌿 Mis Servicios</h2>
+					<p class="subtitle">
+						Te acompaño a reconectar contigo mismo, entender tus emociones y construir una vida con
+						sentido y bienestar.
+					</p>
+				</div>
 
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <img src="src/icons/confianza.png" alt="Icono confianza">
-                    </div>
-                    <p>Confianza</p>
-                </div>
+				<div class="tarjetas-wrapper">
+					<div class="tarjeta">
+						<div class="servicio">
+							<h3>✨ Terapia Individual para Adultos</h3>
+							<p>
+								Un espacio seguro para explorar emociones, sanar heridas y fortalecer tu bienestar
+								emocional. Ideal si enfrentas ansiedad, estrés, tristeza o cambios importantes en tu
+								vida.
+							</p>
+							<p class="info-extra">Modalidad online o presencial · Duración 50 minutos</p>
+						</div>
+					</div>
 
-            </div>
-        </div>
-        <!-- Servicios -->
-        <section id="services" class="servicios-stack pantalla-completa hidden">
-            <div class="titulo-fijo">
-                <h2>🌿 Mis Servicios</h2>
-                <p class="subtitle">Te acompaño a reconectar contigo mismo, entender tus emociones y construir una vida
-                    con sentido y bienestar.</p>
-            </div>
+					<div class="tarjeta">
+						<div class="servicio">
+							<h3>👨‍👩‍👧 Terapia para Padres y Madres</h3>
+							<p>
+								Orientación consciente para acompañarte en tu rol como madre, padre o cuidador,
+								fortaleciendo el vínculo y gestionando los desafíos cotidianos.
+							</p>
+							<p class="info-extra">
+								Desde un enfoque de crianza respetuosa y desarrollo emocional infantil
+							</p>
+						</div>
+					</div>
 
-            <div class="tarjetas-wrapper">
-                <div class="tarjeta">
-                    <div class="servicio">
-                        <h3>✨ Terapia Individual para Adultos</h3>
-                        <p>Un espacio seguro para explorar emociones, sanar heridas y fortalecer tu bienestar emocional.
-                            Ideal si enfrentas ansiedad, estrés, tristeza o cambios importantes en tu vida.</p>
-                        <p class="info-extra">Modalidad online o presencial · Duración 50 minutos</p>
-                    </div>
-                </div>
+					<div class="tarjeta">
+						<div class="servicio">
+							<h3>💼 Acompañamiento en Procesos de Cambio</h3>
+							<p>
+								Te acompaño a transitar duelos, rupturas, migraciones o transiciones de vida con
+								claridad, fuerza y sentido.
+							</p>
+							<p class="info-extra">
+								Enfoque humanista e integrativo · Mindfulness y herramientas prácticas
+							</p>
+						</div>
+					</div>
 
-                <div class="tarjeta">
-                    <div class="servicio">
-                        <h3>👨‍👩‍👧 Terapia para Padres y Madres</h3>
-                        <p>Orientación consciente para acompañarte en tu rol como madre, padre o cuidador, fortaleciendo
-                            el vínculo y gestionando los desafíos cotidianos.</p>
-                        <p class="info-extra">Desde un enfoque de crianza respetuosa y desarrollo emocional infantil</p>
-                    </div>
-                </div>
+					<div class="tarjeta">
+						<div class="servicio">
+							<h3>🌱 Sesiones de Autoconocimiento</h3>
+							<p>
+								Un proceso profundo y amoroso para fortalecer tu autoestima, explorar tu mundo
+								interno y conectar con tu propósito.
+							</p>
+							<p class="info-extra">Para quienes buscan crecer, más allá de una crisis</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Separador -->
+			<div class="icon-section">
+				<div class="icon-section-container">
+					<div class="icon-item">
+						<div class="icon-circle">
+							<i class="fas fa-heartbeat"></i>
+						</div>
+						<h4>Atención personalizada</h4>
+						<p>Nos centramos en ti y en tu bienestar.</p>
+					</div>
 
-                <div class="tarjeta">
-                    <div class="servicio">
-                        <h3>💼 Acompañamiento en Procesos de Cambio</h3>
-                        <p>Te acompaño a transitar duelos, rupturas, migraciones o transiciones de vida con claridad,
-                            fuerza y sentido.</p>
-                        <p class="info-extra">Enfoque humanista e integrativo · Mindfulness y herramientas prácticas</p>
-                    </div>
-                </div>
+					<div class="icon-item">
+						<div class="icon-circle">
+							<i class="fas fa-user-md"></i>
+						</div>
+						<h4>Profesionales expertos</h4>
+						<p>Contamos con médicos certificados y comprometidos.</p>
+					</div>
 
-                <div class="tarjeta">
-                    <div class="servicio">
-                        <h3>🌱 Sesiones de Autoconocimiento</h3>
-                        <p>Un proceso profundo y amoroso para fortalecer tu autoestima, explorar tu mundo interno y
-                            conectar con tu propósito.</p>
-                        <p class="info-extra">Para quienes buscan crecer, más allá de una crisis</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-         <!-- Separador -->
-        <div class="icon-section">
-            <div class="icon-section-container">
-                <div class="icon-item">
-                    <div class="icon-circle">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h4>Atención personalizada</h4>
-                    <p>Nos centramos en ti y en tu bienestar.</p>
-                </div>
+					<div class="icon-item">
+						<div class="icon-circle">
+							<i class="fas fa-stethoscope"></i>
+						</div>
+						<h4>Equipamiento moderno</h4>
+						<p>La tecnología más avanzada a tu servicio.</p>
+					</div>
+				</div>
+			</div>
+			<!-- 📞 CONTACTO -->
+			<!--<img src="src/icons/fondo.svg" alt="Olas decorativas" class="ondas-decorativas" />-->
+			<div id="contact" class="pantalla-completa hidden">
+				<div class="clinic-footer">
+					<div class="footer-title">Clíni...........l</div>
+					<div class="footer-card-container">
+						<!-- Dirección -->
+						<div class="footer-card">
+							<i class="fas fa-map-marker-alt footer-icon"></i>
+							<h4>Dirección</h4>
+							<p>Calle 123 #45-67</p>
+							<p>Badajoz, España</p>
+						</div>
 
-                <div class="icon-item">
-                    <div class="icon-circle">
-                        <i class="fas fa-user-md"></i>
-                    </div>
-                    <h4>Profesionales expertos</h4>
-                    <p>Contamos con médicos certificados y comprometidos.</p>
-                </div>
+						<!-- Teléfono -->
+						<div class="footer-card">
+							<i class="fas fa-phone footer-icon"></i>
+							<h4>Teléfono</h4>
+							<p>+123 456 7890</p>
+						</div>
 
-                <div class="icon-item">
-                    <div class="icon-circle">
-                        <i class="fas fa-stethoscope"></i>
-                    </div>
-                    <h4>Equipamiento moderno</h4>
-                    <p>La tecnología más avanzada a tu servicio.</p>
-                </div>
+						<!-- Email -->
+						<div class="footer-card">
+							<i class="fas fa-envelope footer-icon"></i>
+							<h4>Email</h4>
+							<p>contacto@clinicasaludtotal.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-            </div>
-        </div>
-        <!-- 📞 CONTACTO -->
-        <!--<img src="src/icons/fondo.svg" alt="Olas decorativas" class="ondas-decorativas" />-->
-        <div id="contact" class="pantalla-completa hidden">
-            <div class="clinic-footer">
-                <div class="footer-title">Clíni...........l</div>
-                <div class="footer-card-container">
-                    <!-- Dirección -->
-                    <div class="footer-card">
-                        <i class="fas fa-map-marker-alt footer-icon"></i>
-                        <h4>Dirección</h4>
-                        <p>Calle 123 #45-67</p>
-                        <p>Badajoz, España</p>
-                    </div>
-
-                    <!-- Teléfono -->
-                    <div class="footer-card">
-                        <i class="fas fa-phone footer-icon"></i>
-                        <h4>Teléfono</h4>
-                        <p>+123 456 7890</p>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="footer-card">
-                        <i class="fas fa-envelope footer-icon"></i>
-                        <h4>Email</h4>
-                        <p>contacto@clinicasaludtotal.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <a class="top" style="display: none;">
-            <i class="fas fa-arrow-up"></i>
-        </a>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
+			<a class="top" style="display: none">
+				<i class="fas fa-arrow-up"></i>
+			</a>
+		</main>
+		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
 </html>
