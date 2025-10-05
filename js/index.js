@@ -8,18 +8,28 @@ window.addEventListener('scroll', () => {
 		btnTop.style.display = 'none';
 	}
 });
+
 btnTop.addEventListener('click', () => {
 	window.scrollTo({
 		top: 0,
 		behavior: 'smooth'
 	});
 });
+
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 
-hamburger.addEventListener('click', () => {
-	navMenu.classList.toggle('active');
+document.body.addEventListener('click', (event) => {
+	const target = event.target;
+	if (hamburger.contains(target)) {
+		navMenu.classList.toggle('active');
+	} else if (event.target.tagName === 'A' && navMenu.contains(target)) {
+		navMenu.classList.remove('active');
+	} else if (!navMenu.contains(target)) {
+		navMenu.classList.remove('active');
+	}
 });
+
 const observer = new IntersectionObserver(
 	(entries) => {
 		entries.forEach((entry) => {
